@@ -1,0 +1,29 @@
+<div id="accordion-{{id}}" role="tablist" data-children=".sample-item">
+    <div class="sample-item">
+        <a class="accordion-link row" href="#sample-{{id}}" data-control data-toggle="collapse" data-parent="#accordion-{{id}}">
+            <h6 class="sample-title text-uppercase col-12 mt-3 mb-3">
+                {{type}} Sample
+            </h6>
+        </a>
+        <div data-content class="collapse show row" id="sample-{{id}}">
+            <div class="sample-snippet col-12">
+                <pre><code>{{sampleJSON}}</code></pre>
+            </div>
+        </div>
+    </div>
+
+    {{#if signature}}
+        <div class="sample-item">
+            <a class="accordion-link row" href="#schema-{{id}}" data-control data-toggle="collapse" data-parent="#accordion-{{id}}">
+                <h6 class="schema-title text-uppercase collapsed col-12 mt-3 mb-3">
+                    {{type}} Schema
+                </h6>
+            </a>
+            <div data-content class="collapse row" id="schema-{{id}}">
+                <div class="schema-description col-12">
+                    {{{signature}}}
+                </div>
+            </div>
+        </div>
+    {{/if}}
+</div>
