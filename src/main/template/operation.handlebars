@@ -1,7 +1,7 @@
 <div class="operations">
     <div class="{{method}} operation" id="{{parentId}}_{{nickname}}">
         <div class="row">
-            <div class="content col-lg-8 col-xl-7 pt-3 pb-3">
+            <div class="content col-lg-6 col-xl-6 pt-3 pb-3">
                 <div class="heading mb-3">
                     <h3 class="operation-title">
                         <a class="opperation_link" href="#{{parentId}}_{{nickname}}">{{summary}}</a>
@@ -14,10 +14,10 @@
                             </h5>
                         </div>
                         <a href="javascript:;" class="toggle-samples text-nowrap text-muted d-none d-lg-block">
-                            <small class="text">Mostrar</small> <i class="fa fa-code"></i>
+                            <small class="text">Ocultar</small> <i class="fa fa-code"></i>
                         </a>
                         <a href="#samples-{{parentId}}_{{nickname}}" class="text-nowrap text-muted d-lg-none">
-                            <small class="text">Mostrar</small> <i class="fa fa-code"></i>
+                            <small class="text">Ocultar</small> <i class="fa fa-code"></i>
                         </a>
                     </div>
                 </div>
@@ -64,8 +64,8 @@
                     {{/if}}
                 </form>
             </div>
-            <div class="samples col-lg-4 col-xl-5" id="samples-{{parentId}}_{{nickname}}">
-                <span class="model-signature d-lg-none"></span>
+            <div class="samples col-lg-6 col-xl-6" id="samples-{{parentId}}_{{nickname}}">
+                <span class="model-signature"></span>
             </div>
         </div>
 

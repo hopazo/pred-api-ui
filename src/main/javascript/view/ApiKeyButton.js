@@ -23,11 +23,9 @@ SwaggerUi.Views.ApiKeyButton = Backbone.View.extend({ // TODO: append this to gl
     if (key && key.trim() != "") {
         var apiKeyAuth = new SwaggerClient.ApiKeyAuthorization(this.model.name, "Bearer " + key, this.model.in);
         window.swaggerUi.api.clientAuthorizations.add('Bearer', apiKeyAuth);
-        log(window.swaggerUi.api.clientAuthorizations);
     }
     else {
       window.swaggerUi.api.clientAuthorizations.remove('Bearer');
-      log(window.swaggerUi.api.clientAuthorizations);
     }
   },
 

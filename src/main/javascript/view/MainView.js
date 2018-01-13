@@ -134,11 +134,9 @@ SwaggerUi.Views.MainView = Backbone.View.extend({
 
     this.addResource(resource, this.model.auths);
     this.addSidebarHeader(resource, 0);
-    log(this.model.apisArray);
     var authRemoved = this.model.apisArray.filter(function(el) {
       return el.name !== "auth";
     });
-    log(authRemoved);
     for (var i = 0; i < authRemoved.length; i++) {
       resource = authRemoved[i];
       id = resource.name;

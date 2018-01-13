@@ -23,7 +23,6 @@ SwaggerUi.Views.BasicAuthButton = Backbone.View.extend({
     var password = $('#input_password').val();
     var basicAuth = new SwaggerClient.PasswordAuthorization('basic', username, password);
     window.swaggerUi.api.clientAuthorizations.add('basic', basicAuth);
-    log("added passwordAuth");
   },
 
   template: function(){
